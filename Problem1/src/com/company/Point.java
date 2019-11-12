@@ -7,13 +7,11 @@ public class Point {
 	private double area;//面积
 	
 	public Point(double x, double y) {
-		// TODO Auto-generated constructor stub
 		this.x = x;
 		this.y = y;
 	}
 	
 	public Point() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public double getX() {
@@ -36,7 +34,6 @@ public class Point {
 	}
 
 	public void setLocation(double x, double y) {
-		// TODO Auto-generated method stub
 		this.x = x;
 		this.y = y;
 	}

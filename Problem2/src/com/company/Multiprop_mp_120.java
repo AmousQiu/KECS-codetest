@@ -6,16 +6,15 @@ public class Multiprop_mp_120 {
     private float extension;
     private float angle;
 
-    public static float allowableLoad(float extension,float angle){
-		float load = 0;//假设长度单位为m，承载单位为KN
-		double a = Math.toRadians(angle);//绝对度数转换成弧度
-		if(extension < 1.1){
-			load = (float) (90*Math.cos(a));
-		}else{
-			load = (float) (86*Math.cos(a));
-		}
-		return load;
-	}
+    public static float allowableLoad(float extension, float angle) {
+        float load = 0;
+        double a = Math.toRadians(angle);
+        if (extension < 1.1) {
+            load = (float) (90 * Math.cos(a));
+        } else {
+            load = (float) (86 * Math.cos(a));
+        }
+        return load;
     }
 
     public String getProductDesignation() {

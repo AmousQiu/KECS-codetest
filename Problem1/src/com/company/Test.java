@@ -1,4 +1,4 @@
-import com.Point;
+import com.company.Point;
 import java.util.ArrayList;
 
 public class Test {
