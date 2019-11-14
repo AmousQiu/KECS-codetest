@@ -2,9 +2,9 @@ package com.company;
 
 public class Point {
 	
-	private double x;//x坐标
-	private double y;//y坐标
-	private double area;//面积
+	private double x;
+	private double y;
+	private double area;
 	
 	public Point(double x, double y) {
 		this.x = x;

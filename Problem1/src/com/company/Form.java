@@ -1,9 +1,8 @@
 package com.company;
-
+import com.company.Shape;
 import java.awt.*;
 
-public class Form {
-    private Point p;
+public class Form extends Shape{
     private float depth;
     private float mass;
     private String material;
@@ -24,14 +23,6 @@ public class Form {
         this.mass = mass;
     }
 
-    public Point getP() {
-        return p;
-    }
-
-    public void setP(Point p) {
-        this.p = p;
-    }
-
     public String getMaterial() {
         return material;
     }
@@ -40,4 +31,25 @@ public class Form {
         this.material = material;
     }
 
+    public static point com(ArrayList<Form> components){
+	
+        int count = components.size();
+        Point centroid = new Point();
+        double gx = 0.0, gy = 0.0;
+        double summass=0.0;
+    
+        for(int i=0;i<count;i++){
+            gx+=(components.get(i).com(components.get(i).getlist()).getX())*(components.get(i).getmass);
+            gy+=(components.get(i).com(components.get(i).getlist()).getY())*(components.get(i).getmass);
+            summass+=components.get(i).getmass;
+        }
+    
+        if (summass>0){
+        centroid.setLocation(gx/summass, gy/summass);
+        }
+    
+        return centroid;
+                
+    }
+     
 }

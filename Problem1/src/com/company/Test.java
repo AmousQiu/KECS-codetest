@@ -10,9 +10,7 @@ public class Test {
 		list1.add(e2);
 		Point e3 = new Point(3.0, 0.0);
 		list1.add(e3);
-		//长方形
-//		Point e4 = new Point(3.0, 4.0);
-//		list1.add(e4);
+
 		Shape sh = new Shape();
 		
 		Point center = sh.com(list1);
